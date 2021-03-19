@@ -1,0 +1,10 @@
+flask
+flask-cors
+flask-graphql
+graphene
+flask-migrate
+flask-sqlalchemy
+graphene-sqlalchemy
+pyjwt
+python-dotenv
+sqlalchemy

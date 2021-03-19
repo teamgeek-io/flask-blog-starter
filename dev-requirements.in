@@ -1,0 +1,9 @@
+-c requirements.txt
+before_after
+black
+flake8
+pre-commit
+pytest
+pytest-cov
+requests-mock
+pytest-mock
