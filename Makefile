@@ -67,6 +67,7 @@ test: lint
 .PHONY: run
 run:
 	PYTHONPATH=$(PYTHONPATH)		\
+	FLASK_ENV=$(FLASK_ENV)			\
 	$(bin_dir)/flask run
 
 .PHONY: db_migration

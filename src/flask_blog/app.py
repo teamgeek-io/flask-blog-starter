@@ -9,8 +9,9 @@ def create_app(config=None):
 
     configure_app(app, import_name, config)
 
-    from .views import graphql
+    from .views import graphql, pages
 
+    app.register_blueprint(pages)
     app.register_blueprint(graphql)
 
     return app
