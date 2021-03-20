@@ -2,7 +2,7 @@ import graphene
 from graphene import relay
 from graphene_sqlalchemy import SQLAlchemyConnectionField
 
-from . import models
+from . import models, mutations
 from .types import PostConnection
 
 
@@ -17,4 +17,8 @@ class Query(graphene.ObjectType):
         return query.all()
 
 
-schema = graphene.Schema(query=Query)
+class Mutation(graphene.ObjectType):
+    create_post = mutations.CreatePost.Field()
+
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
