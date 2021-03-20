@@ -75,13 +75,13 @@ db_migration:
 	PYTHONPATH=$(PYTHONPATH)		\
 	$(bin_dir)/flask db migrate
 
-.PHONY: upgrade_db
-upgrade_db:
+.PHONY: db_upgrade
+db_upgrade:
 	PYTHONPATH=$(PYTHONPATH)		\
 	$(bin_dir)/flask db upgrade
 
-.PHONY: downgrade_db
-downgrade_db:
+.PHONY: db_downgrade
+db_downgrade:
 	PYTHONPATH=$(PYTHONPATH)			\
 	$(bin_dir)/flask db downgrade
 
