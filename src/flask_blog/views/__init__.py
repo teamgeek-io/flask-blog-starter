@@ -1,4 +1,4 @@
 from .graphql import graphql
-from .pages import pages
+from .posts import posts
 
-__all__ = ["graphql", "pages"]
+__all__ = ["graphql", "posts"]

@@ -15,9 +15,9 @@ def create_app(config=None):
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from .views import graphql, pages
+    from .views import graphql, posts
 
-    app.register_blueprint(pages)
+    app.register_blueprint(posts)
     app.register_blueprint(graphql)
 
     return app
