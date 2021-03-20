@@ -6,17 +6,19 @@ Blog application built with [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
 Start by setting up your development environment. First, make sure that you have _Python 3.7.1_ or later available in your terminal. The easiest way to manage multiple versions of _Python_ is to use [pyenv](https://github.com/pyenv/pyenv).
 
-**next, in your project root, install the Python dependencies by executing:**
+Next, in your project root, install the Python dependencies by executing:
 
 ```
 make dev_install
 ```
 
-**then run the application by executing:\***
+then run the application by executing:
 
 ```
 make run
 ```
+
+now you can access your application by navigating to [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your browser.
 
 ## Linting
 
