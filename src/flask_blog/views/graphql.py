@@ -19,20 +19,25 @@ class AuthorizationMiddleware:
         if "user" not in g:
             try:
                 token = request.headers.get("Authorization")
-                payload = jwt.decode(token, verify=False)
-                g.user = {
-                    "email": payload.get("email"),
-                    "family_name": payload.get("family_name"),
-                    "given_name": payload.get("given_name"),
-                    "phone_number": payload.get("phone_number"),
-                }
+                if token:
+                    payload = jwt.decode(
+                        token,
+                        current_app.config["JWT_SECRET"],
+                        algorithms=["HS256"],
+                    )
+                    g.user = {
+                        "email": payload.get("email"),
+                        "family_name": payload.get("family_name"),
+                        "given_name": payload.get("given_name"),
+                        "phone_number": payload.get("phone_number"),
+                    }
+                else:
+                    g.user = None
             except Exception:
                 current_app.logger.exception(
                     f"Invalid authorization token: {token}"
                 )
                 raise Forbidden()
-            else:
-                current_app.logger.debug(g.user)
 
         return next(root, info, **args)
 
