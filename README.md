@@ -82,3 +82,36 @@ To fetch all posts execute the following query in GraphiQL:
   }
 }
 ```
+
+## What you need to do
+
+We need you to take this sample project, fork the repository, and add some extra features.
+
+### Key goals and deliverables
+
+- We would like to be able to tag posts by associating zero or more tags with a single post.
+- We would like to filter the list of posts by tag.
+- We would like to filter posts by the date they were created.
+- Some of our client consume the blog content via the GraphQL API. Currently they can only list and create posts, but have asked for the ability to edit and delete posts.
+- We would also like to filter posts by tag and creation date via the GraphQL API.
+
+**Bonus points**
+
+- Implement user authentication (consider using [Flask-Login](https://flask-login.readthedocs.io/en/latest/))
+- Deploy the project in AWS, Azure or GCP
+- Add unit tests for the new features
+
+### Dependencies and tools
+
+You may install any other third-party dependencies and tools.
+
+### Assignment submission
+
+Submit this assignment by creating a fork of this repository in your own GitHub account and send a link to your _public_ fork to work@teamgeek.io (Please do not create a pull-request).
+
+## Plagiarism declaration
+
+1. I know that plagiarism is wrong. Plagiarism is to use another’s work and pretend that it is one’s own.
+2. This assignment is my own work.
+3. I have not allowed, and will not allow, anyone to copy my work with the intention of passing it off as his or her own work.
+4. I acknowledge that copying someone else’s assignment (or part of it) is wrong and declare that my assignments are my own work.
