@@ -1,18 +1,18 @@
 # Flask blog starter project
 
-Blog application built with Flask and SQLAlchemy.
+Blog application built with [Flask](https://flask.palletsprojects.com/en/1.1.x/) and [SQLAlchemy](https://www.sqlalchemy.org/).
 
 ## Get started
 
-Start by setting up your development environment.
+Start by setting up your development environment. First, make sure that you have *Python 3.7.1* or later available in your terminal. The easiest way to manage multiple versions of *Python* is to use [pyenv](https://github.com/pyenv/pyenv).
 
-**In the project root, install the Python dependencies by executing:**
+**next, in your project root, install the Python dependencies by executing:**
 
 ```
 make dev_install
 ```
 
-**then run the application by running:***
+**then run the application by executing:***
 
 ```
 make run
