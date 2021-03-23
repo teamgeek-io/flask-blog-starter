@@ -109,6 +109,8 @@ You may install any other third-party dependencies and tools.
 
 Submit this assignment by creating a fork of this repository in your own GitHub account and send a link to your _public_ fork to work@teamgeek.io (Please do not create a pull-request).
 
+**NOTE:** Do not remove the *Plagiarism declaration*.
+
 ## Plagiarism declaration
 
 1. I know that plagiarism is wrong. Plagiarism is to use another’s work and pretend that it is one’s own.
