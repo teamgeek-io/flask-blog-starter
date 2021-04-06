@@ -12,6 +12,18 @@ Next, in your project root, install the Python dependencies by executing:
 make dev_install
 ```
 
+then create the database
+
+```
+make db_upgrade
+```
+
+then seed the database with some initial data
+
+```
+make seed_db
+```
+
 then run the application by executing:
 
 ```

@@ -86,9 +86,9 @@ db_downgrade:
 	$(bin_dir)/flask db downgrade
 
 .PHONY: init_db
-init_db:
+seed_db:
 	PYTHONPATH=$(PYTHONPATH)							\
-	$(bin_dir)/python scripts/init_db.py
+	$(bin_dir)/python scripts/seed_db.py
 
 
 .PHONY: shell
